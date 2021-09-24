@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Roboto:ital,wght@0,100;1,100&family=Sunflower:wght@300&display=swap"
+          rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Jua', sans-serif;
+
+        }
+        .wrap {
+            width: 500px;
+            margin: 110px auto;
+
+        }
+
+        .img {
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            background-position: center;
+            background-size: cover;
+
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 80px;
+            /*margin-left: 80px;*/
+        }
+
+        .size {
+            margin-top: 30px;
+        }
+
+        .price {
+            font-size: 18px;
+        }
+
+        .line {
+            width: 500px;
+
+        }
+
+        .btn {
+            width: 100px;
+            margin: auto;
+            display: block;
+        }
+
+    </style>
+    <script>
+        function order() {
+            alert('주문완료');
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <img class=" img" src=" https://shopping-phinf.pstatic.net/main_9822248/9822248193.20200305162434.jpg?type=f640"/>
+    <div class="size">
+        <h3>DELL 울트라 샤프 U2417H 모니터 </h3> <span class="price"> 가격 : 320,000 원/개</span>
+        <hr>
+        <p>최대 해상도 : 1920x1080(FHD)최대 주사율 : 60Hz패널 : IPS패널(광시야각)곡면형 : 평면화면비율 : 16:9화면종류 : LED응답속도 : 8ms부가기능 : USB동영상 재생,
+            눈부심방지밝기 : 250cd명암비 : 1000:1품목 : 모니터픽셀피치 : 0.2745mm조명 : LED백라이트색표현 : sRGB(99%)단자 : HDMI, DisplayPort, USB,
+            오디오출력,
+            miniDisplayPort, DisplayPort(2개), USB3.0(5개)화면공유 : MHL소비전력 : 19W대기전력 : 0.5W스탠드 기능 : 피벗(회전), 틸트(상하),
+            엘리베이션(높낮이),
+            스위블(좌우)슬림베젤 : 0.53cmVESA홀 : 100x100</p>
+        <hr>
+    </div>
+    <h3> 주문하기 </h3>
+    <div class="line">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주문자이름</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>--수량을 선택하세요--</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+
+        </div>
+        <button type="button" onclick="order()" class="btn btn-primary">주문하기</button>
+    </div>
+
+</div>
+</body>
+</html>
